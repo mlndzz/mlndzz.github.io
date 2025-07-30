@@ -1,5 +1,5 @@
 # Isaac Melendez  
-_<span style="color:#3A5BA0;">iOS</span> Developer | <span style="color:#3A5BA0;">SwiftUI</span> Enthusiast | Software Engineer_
+_<span iOS Developer | SwiftUI Enthusiast | Software Engineer_
 
 ## About Me  
 I build beautiful, user‑friendly iOS applications using Swift and SwiftUI, combining clean design with reliable, scalable code. With a strong background in enterprise software and a passion for creating intuitive mobile experiences, I deliver apps that are as functional as they are delightful to use.
