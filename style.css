@@ -217,7 +217,7 @@ body.dark-mode h3 {
 
 body.dark-mode .resume-btn {
   background-color: #80AFFF;
-  color: #1e1e1e;
+  color: #1e1e1e !important;
 }
 
 body.dark-mode .contact,
@@ -237,12 +237,16 @@ body.dark-mode #resume .container {
   padding: 20px;
 }
 
-body.dark-mode #resume a,
-body.dark-mode #resume .resume-btn {
+body.dark-mode #resume a {
   color: #80AFFF;
 }
 
-body.dark-mode #resume .resume-btn:hover,
-body.dark-mode #resume a:hover {
-  text-decoration: underline;
+body.dark-mode #resume .resume-btn:hover {
+  background-color: #2d4680 !important;
+  color: #fff !important;
+}
+
+body.dark-mode #resume .resume-btn {
+  /* ensuring text color remains visible */
+  color: #1e1e1e !important;
 }
