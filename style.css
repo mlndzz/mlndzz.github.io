@@ -1,25 +1,22 @@
+/* Base body styles and transitions */
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: #ffffff;
+  background-color: #ffffff;
   color: #333333;
   margin: 0;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
+/* Header */
 header {
   text-align: center;
-  padding: 1px 20px 1px;
-  background: #f9f9f9;
-  transition: padding 0.3s ease, box-shadow 0.3s ease;
+  padding: 1px 20px 1px; 
+  background-color: #f9f9f9;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-body.dark-mode header {
-  background: #2a2a2a;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease; 
 }
 
 header h1 {
@@ -34,10 +31,12 @@ header h2 {
   margin-top: 0;
 }
 
+/* Highlight text */
 .highlight {
   color: #3A5BA0;
 }
 
+/* Contact info */
 .contact {
   font-size: 1em;
   color: #444444;
@@ -53,12 +52,15 @@ header h2 {
   text-decoration: underline;
 }
 
+/* Container */
 .container {
   max-width: 900px;
   margin: auto;
   padding: 20px;
+  /* text color inherited from body */
 }
 
+/* Headings */
 h3 {
   font-size: 1.5em;
   color: #3A5BA0;
@@ -67,6 +69,7 @@ h3 {
   margin-bottom: 20px;
 }
 
+/* Projects */
 .project {
   margin-bottom: 20px;
 }
@@ -80,32 +83,29 @@ h3 {
   text-decoration: underline;
 }
 
+/* Resume button */
 .resume-btn {
   display: inline-block;
   padding: 10px 20px;
   color: #fff;
-  background: #3A5BA0;
+  background-color: #3A5BA0;
   text-decoration: none;
   border-radius: 6px;
-  transition: background 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .resume-btn:hover {
-  background: #2d4680;
+  background-color: #2d4680;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
   font-size: 0.8em;
-  background: #f9f9f9;
+  background-color: #f9f9f9;
   color: #555555;
   transition: background-color 0.4s ease, color 0.4s ease;
-}
-
-body.dark-mode footer {
-  background: #2a2a2a;
-  color: #cccccc;
 }
 
 /* Footer content */
@@ -116,7 +116,7 @@ body.dark-mode footer {
   gap: 10px;
 }
 
-/* Toggle inside footer */
+/* Toggle switch */
 .toggle-switch {
   display: flex;
   align-items: center;
@@ -125,21 +125,26 @@ body.dark-mode footer {
   backdrop-filter: blur(20px) saturate(150%);
   border-radius: 40px;
   padding: 10px 20px;
+  transition: background-color 0.4s ease;
 }
 
 body.dark-mode .toggle-switch {
   background: rgba(40,40,40,0.4);
+  transition: background-color 0.4s ease;
 }
 
+/* Toggle labels */
 .toggle-switch .label {
   font-size: 0.9em;
   color: #555;
+  transition: color 0.4s ease;
 }
 
 body.dark-mode .toggle-switch .label {
   color: #ddd;
 }
 
+/* Switch styling */
 .toggle-switch input {
   display: none;
 }
@@ -152,7 +157,7 @@ body.dark-mode .toggle-switch .label {
   background: #ccc;
   border-radius: 50px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .switch .icon {
@@ -160,7 +165,7 @@ body.dark-mode .toggle-switch .label {
   top: 4px;
   left: 6px;
   font-size: 16px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .switch::after {
@@ -172,11 +177,11 @@ body.dark-mode .toggle-switch .label {
   height: 24px;
   background: #fff;
   border-radius: 50%;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 input:checked + .switch {
-  background: #3A5BA0;
+  background-color: #3A5BA0;
 }
 
 input:checked + .switch .icon {
@@ -187,39 +192,49 @@ input:checked + .switch::after {
   transform: translateX(24px);
 }
 
-/* Dark Mode */
+/* Dark mode colors */
 body.dark-mode {
-  background: #1e1e1e;
+  background-color: #1e1e1e;
   color: #f0f0f0;
 }
 
+/* Dark mode header */
+body.dark-mode header {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+/* Dark mode footer */
+body.dark-mode footer {
+  background-color: #2a2a2a;
+  color: #cccccc;
+}
+
+/* Dark mode text accents */
 body.dark-mode h3 {
   color: #80AFFF;
 }
 
 body.dark-mode .resume-btn {
-  background: #80AFFF;
+  background-color: #80AFFF;
   color: #1e1e1e;
 }
 
-body.dark-mode .contact a,
-body.dark-mode .project a {
+body.dark-mode .contact,
+body.dark-mode .project a,
+body.dark-mode .contact a {
   color: #80AFFF;
 }
 
-body.dark-mode .contact {
-  color: #DDDDDD;
-}
-
-/* Dark Mode for Resume section */
+/* Dark mode resume section */
 body.dark-mode #resume {
   color: #f0f0f0;
 }
 
 body.dark-mode #resume .container {
   background-color: #1e1e1e;
-  padding: 20px;
   border-radius: 6px;
+  padding: 20px;
 }
 
 body.dark-mode #resume a,
@@ -227,12 +242,7 @@ body.dark-mode #resume .resume-btn {
   color: #80AFFF;
 }
 
-body.dark-mode #resume .resume-btn {
-  background: #80AFFF;
-  color: #1e1e1e;
-}
-
-body.dark-mode #resume a:hover,
-body.dark-mode #resume .resume-btn:hover {
+body.dark-mode #resume .resume-btn:hover,
+body.dark-mode #resume a:hover {
   text-decoration: underline;
 }
