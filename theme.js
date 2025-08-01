@@ -17,16 +17,3 @@ if (savedTheme === 'dark') {
 } else {
   applyTheme(false);
 }
-
-// Move toggle above footer when near bottom
-window.addEventListener('scroll', () => {
-  const toggleSwitch = document.querySelector('.toggle-switch');
-  const footer = document.querySelector('footer');
-  const footerRect = footer.getBoundingClientRect();
-  const windowHeight = window.innerHeight;
-  if (footerRect.top < windowHeight - 80) {
-    toggleSwitch.style.bottom = `${windowHeight - footerRect.top + 20}px`;
-  } else {
-    toggleSwitch.style.bottom = '20px';
-  }
-});
