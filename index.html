@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Melendez - iOS Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Preload theme before rendering
+    (function() {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Isaac Melendez</h1>
+      <h2><span class="highlight">iOS</span> Developer | <span class="highlight">SwiftUI</span> Enthusiast | Software Engineer</h2>
+      <p class="contact">Greater Cincinnati Area • <a href="mailto:isaacmgpa@gmail.com">isaacmgpa@gmail.com</a> • <a href="https://linkedin.com/in/mlndz">LinkedIn</a> • <a href="https://mlndzz.github.io">Portfolio</a></p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h3>About Me</h3>
+      <p>I’m passionate about creating clean, intuitive iOS applications that feel natural and meaningful to the people who use them. For me, development isn’t just about writing code — it’s about crafting experiences that combine simplicity, design, and functionality.</p>
+      <p>Outside of coding, I enjoy photography, music, nature, and cooking — creative outlets that inspire my approach to app development: attention to detail, an eye for aesthetics, and a focus on building software that connects with users.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h3>Projects</h3>
+      <div class="project">
+        <h4>WeSplit (iOS)</h4>
+        <p>Tip-splitting iOS app built with Swift & SwiftUI. <a href="#">View on GitHub</a></p>
+      </div>
+      <div class="project">
+        <h4>Expense Tracker (iOS)</h4>
+        <p>Personal finance app using SwiftUI for offline data management. <a href="#">View on GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <div class="container">
+      <h3>Resume</h3>
+      <a class="resume-btn" href="assets/Isaac_Melendez_Resume.pdf" target="_blank">View My Resume</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="toggle-switch">
+        <span class="label">Light</span>
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle" class="switch"><span class="icon">☀️</span></label>
+        <span class="label">Dark</span>
+      </div>
+      <p>&copy; 2025 Isaac Melendez</p>
+    </div>
+  </footer>
+
+  <script src="theme.js"></script>
+</body>
+</html>
