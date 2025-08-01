@@ -24,7 +24,7 @@ body.dark-mode header {
 
 header h1 {
   font-size: 2.3em;
-  margin-top: 0;      /* Removed default top margin */
+  margin-top: 0;
   margin-bottom: 8px;
 }
 
@@ -123,7 +123,7 @@ body.dark-mode footer {
   gap: 8px;
   background: rgba(255,255,255,0.3);
   backdrop-filter: blur(20px) saturate(150%);
-  /*border: 1px solid rgba(255,255,255,0.3);*/
+  border: 1px solid rgba(255,255,255,0.3);
   border-radius: 40px;
   padding: 10px 20px;
 }
@@ -218,10 +218,23 @@ body.dark-mode #resume {
   color: #f0f0f0;
 }
 
-body.dark-mode #resume a {
+body.dark-mode #resume .container {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+body.dark-mode #resume a,
+body.dark-mode #resume .resume-btn {
   color: #80AFFF;
 }
 
-body.dark-mode #resume a:hover {
+body.dark-mode #resume .resume-btn {
+  background: #80AFFF;
+  color: #1e1e1e;
+}
+
+body.dark-mode #resume a:hover,
+body.dark-mode #resume .resume-btn:hover {
   text-decoration: underline;
 }
