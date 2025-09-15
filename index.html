@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Melendez - Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Preload theme before rendering
+    (function() {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Isaac Melendez</h1>
+      <h2><span class="highlight">Software</span> Engineer | <span class="highlight">Fintech & Banking</span> Applications</h2>
+      <p class="contact"><a href="mailto:isaacmgpa@gmail.com">Email</a> • <a href="https://linkedin.com/in/mlndz">LinkedIn</a> • <a href="https://mlndzz.github.io">Portfolio</a></p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h3>About Me</h3>
+      <p>Versatile and results-driven Software Engineer with 11+ years of experience building and maintaining complex banking and fintech applications. Skilled in C#, .NET, HTML/JavaScript, and enterprise-scale integrations. Proven success delivering secure, compliant, and reliable systems for major U.S. financial institutions.</p>
+      <p>Outside of coding, I enjoy photography, music, nature, and cooking — creative outlets that inspire my approach to development: attention to detail, an eye for aesthetics, and a focus on building software that connects with users.</p>
+    </div>
+  </section>
+  
+  <section id="experience">
+    <div class="container">
+      <h3>Projects</h3>
+      <div class="project">
+        <h4>Hyosung America (2020 – Present) - Miamisburg, OH</h4>
+        <p>Built customized ATM and TCR applications for major U.S. financial institutions.
+			Migrated ATM UI screens from XAML → HTML/JavaScript, improving maintainability.
+			Collaborated with QA, product, and hardware teams to ensure compliance and security.
+			Mentored junior developers and improved delivery timelines by 15%.</p>
+      </div>
+	  
+	  <div class="project">
+        <h4>TEKsystems (Contracted to Hyosung America) - Miamisburg, OH</h4>
+        <p>Contributed to ATM software development in a high-security, regulated environment.
+			Assisted with integration of hardware modules and customer-specific UI workflows.</p>
+      </div>
+	  
+      <div class="project">
+        <h4>Banco Nacional de Costa Rica (2015 – 2019) - San Jose, Costa Rica</h4>
+        <p>Developed enterprise banking systems (intranet, online banking, mobile platforms).
+			Part of the launch team for BN My Bank (iOS), contributing to mobile banking features.
+			Led developer onboarding to strengthen team delivery and code consistency.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h3>Projects</h3>
+      <div class="project">
+        <h4>BN My Bank (iOS App)</h4>
+        <p>Contributed Objective-C mobile banking features.</p>
+      </div>
+      <div class="project">
+        <h4>HTML-based ATM Screen Overhaul</h4>
+        <p>Migrated ATM workflows to HTML/JavaScript.</p>
+      </div>
+	  <div class="project">
+        <h4>ATM Security Infrastructure</h4>
+        <p>Implemented secure kiosk environments (BitLocker, whitelisting, hardened shells).</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="skills">
+    <div class="container">
+      <h3>Skills</h3>
+      <div class="project">
+        <p><b>Languages: </b>C#, JavaScript, HTML5, TypeScript</p>
+      </div>
+      <div class="project">
+        <p><b>Tools & Tech: </b>SQL Server, WCF, XML, XAML</p>
+      </div>
+	  <div class="project">
+        <p><b>Practices: </b>Agile/Scrum, Secure Coding, Mentorship</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <div class="container">
+      <h3>Resume</h3>
+      <a class="resume-btn" href="assets/Isaac_Melendez_Resume.pdf" target="_blank">View My Resume</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="toggle-switch">
+        <span class="label">Light</span>
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle" class="switch"><span class="icon">☀️</span></label>
+        <span class="label">Dark</span>
+      </div>
+      <p>&copy; 2025 Isaac Melendez</p>
+    </div>
+  </footer>
+
+  <script src="theme.js"></script>
+</body>
+</html>
